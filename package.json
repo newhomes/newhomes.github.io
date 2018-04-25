@@ -1,0 +1,22 @@
+{
+  "name": "marketingstorm",
+  "version": "1.0.0",
+  "description": "Landing page for New Homes Global website",
+  "main": "Javascript.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/Styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feifei35678/Marketing-Storm.git"
+  },
+  "author": "Lisa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feifei35678/Marketing-Storm/issues"
+  },
+  "homepage": "https://github.com/feifei35678/Marketing-Storm#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

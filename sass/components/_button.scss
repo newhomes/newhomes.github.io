@@ -1,0 +1,46 @@
+.mBtn:link,
+.mBtn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  border-radius: 10px;
+  transition: all, .2s;
+  box-shadow: 0 3px 5px rgba(0,0,0,.2);
+}
+
+.mBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  color:black;
+}
+
+.mBtn:active
+.mBtn:focus  {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.mBtn-white {
+  background-color: white;
+  color: $color-grey-dark;
+}
+
+.mBtn-black {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: all, .2s;
+  box-shadow: 0 3px 5px rgba(0,0,0,.2);
+  background-color: #212529;
+  color: white;
+}
+
+.mBtn-black:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  color: white;
+}

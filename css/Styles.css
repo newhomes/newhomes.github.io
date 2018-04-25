@@ -1,0 +1,575 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  font-family: "Lato",sans-serif;
+  font-weight: 400; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.mPrimaryHeading {
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin: 60px; }
+
+.mPrimaryHeading-Main {
+  display: block;
+  white-space: nowrap;
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  animation-name: moveInLeft;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-out;
+  /* animation-delay: 1s;
+  animation-iteration-count: 3; */ }
+
+.mPrimaryHeading-Sub {
+  display: block;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 10.2px;
+  animation-name: moveInRight;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-out; }
+
+.mRow {
+  max-width: 1140px;
+  margin: 0 auto; }
+  .mRow:not(:last-child) {
+    margin-bottom: 80px; }
+  .mRow::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .mRow .col-1-of-3 {
+    width: calc((100% - (70px)*2)/3);
+    float: left; }
+    .mRow .col-1-of-3:not(:last-child) {
+      margin-right: 70px; }
+
+.col-1-of-3 {
+  text-align: center;
+  width: calc((100% - (70px)*2)/3);
+  float: left; }
+  .col-1-of-3:not(:last-child) {
+    margin-right: 70px; }
+
+.col-1-of-4 {
+  text-align: center;
+  width: calc((100% - (70px)*3)/4);
+  float: left; }
+  .col-1-of-4:not(:last-child) {
+    margin-right: 70px; }
+
+.col-1-of-2 {
+  text-align: center;
+  width: calc((100% - 70px)/2);
+  float: left; }
+
+.mHeader {
+  height: 90vh;
+  /*90% of viewport height*/
+  background-image: linear-gradient(to left top, rgba(128, 234, 243, 0.85), rgba(0, 68, 142, 0.85)), url(https://lonelyplanetimages.imgix.net/a/g/hi/t/034978eaa6cdf390361eda25ef1e5353-vancouver-island.jpg?sharp=10&vib=20&w=1200);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+
+.mLogoBox {
+  position: absolute;
+  top: 30px;
+  left: 30px; }
+
+.mLogo {
+  height: 80px; }
+
+.mTextBox {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*---Footer Section---*/
+.footer {
+  background-color: #232323;
+  clip-path: polygon(0 40px, 100% 0%, 100% 100%, 0 100%);
+  padding-top: 4.5%;
+  padding-bottom: 2.5%;
+  float: left;
+  text-align: center;
+  width: 100%;
+  color: white; }
+  .footer .col-1-of-2 {
+    width: calc((100% - 70px)/2);
+    float: left;
+    padding-bottom: 25px; }
+  .footer .col-1-of-2A {
+    padding-top: 10px; }
+    .footer .col-1-of-2A a {
+      padding: 5px 5px;
+      text-decoration: none;
+      color: grey; }
+    .footer .col-1-of-2A a:hover {
+      color: white; }
+  .footer p {
+    margin: 0 auto; }
+  .footer .col-1-of-1 {
+    width: 100%;
+    float: left; }
+
+.footerLogo {
+  padding: 0 10px;
+  height: 50px; }
+
+.mCard {
+  perspective: 1500px;
+  -moz-perspective: 1500px;
+  position: relative;
+  height: 500px; }
+  .mCard_side {
+    height: 500px;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); }
+    .mCard_side_front {
+      background-color: white; }
+    .mCard_side_back {
+      background-image: url(../img/whitewood.png);
+      transform: rotateY(180deg); }
+  .mCard:hover .mCard_side_front {
+    transform: rotateY(-180deg); }
+  .mCard:hover .mCard_side_back {
+    transform: rotateY(0); }
+  .mCard_image {
+    background-size: cover;
+    height: 230px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+    .mCard_image_1 {
+      background-image: url(../img/Marketing.jpg); }
+    .mCard_image_2 {
+      background-image: url(../img/Realestate.jpeg); }
+    .mCard_image_3 {
+      background-position: center;
+      background-image: url(../img/Construction.jpeg); }
+  .mCard_heading {
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 210px;
+    right: 8px; }
+  .mCard_headingwrapper {
+    padding: 3px 16px;
+    background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.85), transparent), url(../img/leather.jpg);
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; }
+  .mCard_details {
+    padding: 60px 50px;
+    line-height: 30px; }
+    .mCard_details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .mCard_details ul li {
+        text-align: center;
+        color: grey;
+        font-size: 15px;
+        padding: 10px; }
+        .mCard_details ul li:not(:last-child) {
+          border-bottom: 1px solid lightgrey; }
+  .mCard .mCard_Back_priceContanier {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .mCard .mCard_Back_Line1 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .mCard .mCard_Back_Price {
+    font-size: 220%;
+    font-weight: 100;
+    padding-bottom: 80px;
+    display: inline-block; }
+
+.mCard_Content {
+  padding: 5px; }
+
+.mBtn:link,
+.mBtn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  border-radius: 10px;
+  transition: all, .2s;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
+
+.mBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: black; }
+
+.mBtn:active
+.mBtn:focus {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+
+.mBtn-white {
+  background-color: white;
+  color: #777; }
+
+.mBtn-black {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: all, .2s;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  background-color: #212529;
+  color: white; }
+
+.mBtn-black:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: white; }
+
+.first-slide {
+  width: 100%; }
+
+.second-slide {
+  width: 100%; }
+
+.third-slide {
+  width: 100%; }
+
+.story1 {
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 3px;
+  padding: 60px;
+  padding-left: 90px;
+  font-size: 16px;
+  line-height: 25px;
+  transform: skewX(-12deg);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1); }
+  .story1_shape {
+    width: 150px;
+    height: 150px;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    transform: translateX(-30px) skewX(12deg); }
+  .story1_image {
+    width: 100%; }
+  .story1_image2 {
+    height: 100%;
+    transform: translateX(-35px); }
+  .story1_text {
+    transform: skewX(12deg);
+    color: grey; }
+
+.bg_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .8;
+  overflow: hidden; }
+  .bg_video_content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.form_input_field {
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  border-bottom: 3px solid transparent;
+  width: 80%;
+  display: block; }
+  .form_input_field:focus {
+    outline: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #80eaf3; }
+  .form_input_field:focus:invalid {
+    border-bottom: 3px solid orange; }
+
+.form_input_label {
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 18px;
+  margin-top: 7px;
+  display: block;
+  color: grey;
+  transition: all .3s; }
+
+.form_input_field:placeholder-shown + .form_input_label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-40px); }
+
+/*---Popup Section---*/
+.popup {
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup_close {
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+    display: inline-block;
+    transition: all .2s; }
+  .popup_close:visited, .popup_close:hover {
+    text-decoration: none;
+    color: black; }
+  .popup_content {
+    background-image: url(../img/whitewood.png);
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 40px; }
+    .popup_content_secondHeader {
+      font-size: 25px;
+      padding-bottom: 15px; }
+    .popup_content_img {
+      margin: 0 auto;
+      height: 200px;
+      padding-bottom: 30px; }
+    .popup_content_text {
+      height: 220px;
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding: 0 15px;
+      text-align: left;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto; }
+    .popup_content_list {
+      text-align: left;
+      margin-left: 30px; }
+
+#popup1:target {
+  opacity: 1;
+  visibility: visible; }
+
+#scroll::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 10px; }
+
+#scroll::-webkit-scrollbar-thumb {
+  background: #232323; }
+
+/*---Navigation Section---*/
+.headWrapper {
+  background-color: #232323;
+  text-align: center;
+  padding: 15px; }
+
+.headWrapper img {
+  height: 150px; }
+
+.navigationWrapper {
+  margin: 0 auto;
+  background-color: black;
+  font-weight: bold;
+  height: 30px;
+  width: 100%; }
+
+@media screen and (max-width: 1000px) {
+  .topnav a:not(:first-child) {
+    display: none; }
+  .topnav a.icon {
+    float: right;
+    display: block; } }
+
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
+
+.mainMenu {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white; }
+
+.mainMenu > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none; }
+
+.mainMenu > ul > li {
+  min-width: 200px;
+  display: inline-block; }
+
+.link {
+  padding: 3px 0;
+  display: block;
+  text-decoration: none;
+  color: black; }
+
+.link:hover {
+  background-color: #232323;
+  color: white;
+  transition: .2s;
+  text-decoration: none; }
+
+.drop {
+  position: relative; }
+
+.subMenu {
+  width: 100%;
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+  list-style: none; }
+
+.drop:hover .subMenu {
+  display: block; }
+
+/*---Services Section---*/
+.section-services {
+  text-align: center;
+  padding: 25px 0 75px 0;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.85), rgba(232, 232, 232, 0.85)); }
+  .section-services_secondHeader {
+    color: #212529;
+    padding: 25px 0;
+    text-align: center;
+    text-transform: uppercase; }
+
+/*---Estimate Section---*/
+.section-estimate {
+  background-image: linear-gradient(to bottom, white, transparent);
+  position: relative;
+  padding-bottom: 150px;
+  width: 100%;
+  margin-bottom: -50px; }
+
+.estimation {
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 55%, transparent 50%), url(../img/vancouver.jpeg);
+  background-size: 100%;
+  background-position: center;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
+  margin-bottom: -50px; }
+  .estimation_content_container {
+    width: 60%;
+    padding: 50px; }
+  .estimation_secondHeader {
+    text-transform: uppercase;
+    padding-bottom: 25px; }
+    .estimation_secondHeader h2 {
+      font-size: 28px; }
+  .estimation_thirdHeader h4 {
+    font-size: 15px; }
+  .estimation_button {
+    padding-top: 35px; }
+
+.form_input_checkbox {
+  padding-top: 45px;
+  width: 27%;
+  display: inline-block;
+  text-transform: uppercase; }
+  .form_input_checkbox_label {
+    cursor: pointer; }
+  .form_input_checkbox_button:focus {
+    color: black; }
+
+.mBody {
+  padding: 25px; }
+
+.storyRow {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 120px; }
+
+.section-testimonial {
+  margin-top: -120px;
+  position: relative;
+  height: 1200px; }
+  .section-testimonial_secondHeader {
+    color: #212529;
+    padding-top: 200px;
+    text-align: center;
+    text-transform: uppercase; }
+
+.thirdHeader {
+  margin-bottom: 15px; }

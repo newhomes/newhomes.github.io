@@ -1,0 +1,177 @@
+/*---Navigation Section---*/
+.headWrapper {
+  background-color: #232323;
+  text-align: center;
+  padding: 15px;
+}
+
+.headWrapper img {
+    height: 150px;
+}
+
+.navigationWrapper {
+  margin: 0 auto;
+  background-color: black;
+  font-weight: bold;
+  height: 30px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.mainMenu {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.mainMenu > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.mainMenu > ul > li {
+  min-width: 200px;
+  display: inline-block;
+}
+
+.link {
+  padding: 3px 0;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  background-color: #232323;
+  color: white;
+  transition: .2s;
+  text-decoration: none;
+}
+
+.drop {
+  position: relative;
+}
+
+.subMenu{
+  width: 100%;
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+  list-style: none;
+}
+
+.drop:hover .subMenu {
+  display: block;
+}
+
+/*---Services Section---*/
+
+.section-services {
+  text-align: center;
+  padding: 25px 0 75px 0;
+  background-image: linear-gradient(
+      to top,
+      rgba(white, .85),
+      rgba($color-grey-light, 0.85));
+
+  &_secondHeader {
+      color: #212529;
+      padding: 25px 0;
+      text-align: center;
+      text-transform: uppercase;
+  }
+}
+
+/*---Estimate Section---*/
+.section-estimate {
+  background-image:linear-gradient(
+  to bottom,
+  rgba(white,1),
+  transparent);
+  position: relative;
+  padding-bottom: 150px;
+  width: 100%;
+  margin-bottom: -50px;
+}
+
+.estimation {
+  background-image:linear-gradient(
+  100deg,
+  rgba(white,.85) 0%,
+  rgba(white,.85) 55%,
+  transparent 50%), url(../img/vancouver.jpeg);
+  background-size: 100%;
+  background-position: center;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 40px rgba(0,0,0,0.5);
+  margin-bottom: -50px;
+
+  &_content_container {
+    width: 60%;
+    padding: 50px;
+  }
+
+  &_secondHeader {
+    text-transform: uppercase;
+    padding-bottom: 25px;
+
+    & h2 {
+      font-size: 28px;
+    }
+  }
+
+  &_thirdHeader {
+    & h4 {
+      font-size: 15px;
+    }
+  }
+
+  &_button {
+    padding-top: 35px;
+  }
+}
+
+.form_input_checkbox {
+  padding-top: 45px;
+  width: 27%;
+  display: inline-block;
+  text-transform: uppercase;
+
+  &_label {
+  cursor: pointer;
+  }
+
+  &_button:focus {
+    color: black;
+  }
+}

@@ -1,0 +1,45 @@
+/*---Footer Section---*/
+.footer {
+  background-color: #232323;
+  clip-path: polygon(0 40px, 100% 0%, 100% 100%, 0 100%);
+  padding-top: 4.5%;
+  padding-bottom: 2.5%;
+  float: left;
+  text-align: center;
+  width: 100%;
+  color: white;
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal})/2);
+    float: left;
+    padding-bottom: 25px;
+  }
+
+  .col-1-of-2A {
+    padding-top: 10px;
+
+    & a {
+      padding: 5px 5px;
+      text-decoration: none;
+      color: grey;
+    }
+
+    & a:hover {
+      color: white;
+    }
+  }
+
+  & p {
+    margin: 0 auto;
+  }
+
+  .col-1-of-1 {
+    width: 100%;
+    float: left;
+  }
+}
+
+.footerLogo {
+  padding: 0 10px;
+  height: 50px;
+}
