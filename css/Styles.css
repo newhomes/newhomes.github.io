@@ -594,9 +594,12 @@ body {
 .thirdHeader {
   margin-bottom: 15px; }
 
-.listings {
+.listingContent {
   background-image: linear-gradient(to bottom, #e8e8e8, transparent);
-  height: 1500px; }
+  height: 1300px; }
+
+.listingContainer {
+  padding-bottom: 30px; }
 
 .headingContainer {
   background-color: #e8e8e8;
@@ -605,30 +608,54 @@ body {
   position: relative; }
 
 .rHeading {
+  background-color: #e8e8e8;
   margin: 0;
   padding-top: 25px;
   font-size: 35px;
   color: #212529;
-  text-align: center;
   text-transform: uppercase; }
 
+.rModeContainer {
+  padding-bottom: 10px;
+  float: right;
+  background-color: #e8e8e8;
+  width: 100%;
+  text-decoration: none;
+  padding-right: 3.5%; }
+
 .mode {
+  float: right;
+  padding: 5px 15px;
   display: inline-block;
-  position: absolute;
-  justify-content: flex-end; }
+  font-size: 15px;
+  border: none;
+  text-transform: uppercase; }
+
+.mode:focus {
+  outline: none; }
+
+.selected {
+  color: white;
+  background-color: steelblue; }
 
 .statusTag {
   color: white;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   text-transform: uppercase;
   float: left;
-  padding: 0 50px 0 5px;
+  padding: 0 15px 0 15px;
   background: orange;
   position: absolute;
   top: 10px;
-  left: 10px; }
+  left: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); }
+
+.far {
+  padding-right: 5px; }
 
 .rHover:hover {
   background-color: white;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
-  transition: 0.2s; }
+  transition: 0.25s; }

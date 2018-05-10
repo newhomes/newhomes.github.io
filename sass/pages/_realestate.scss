@@ -1,0 +1,79 @@
+.listingContent {
+  background-image:linear-gradient(
+  to bottom,
+  rgba($color-grey-light,1),
+  transparent);
+  height: 1300px;
+}
+
+.listingContainer {
+  padding-bottom: 30px;
+}
+
+.headingContainer {
+  background-color: $color-grey-light;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.rHeading {
+  background-color: $color-grey-light;
+  margin: 0;
+  padding-top: 25px;
+  font-size: 35px;
+  color: #212529;
+  text-transform: uppercase;
+}
+
+.rModeContainer {
+  padding-bottom: 10px;
+  float: right;
+  background-color: $color-grey-light;
+  width: 100%;
+  text-decoration: none;
+  padding-right: 3.5%;
+}
+
+.mode {
+  float: right;
+  padding: 5px 15px;
+  display: inline-block;
+  font-size: 15px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.mode:focus {
+  outline: none;
+}
+
+.selected {
+  color: white;
+  background-color: steelblue;
+}
+
+.statusTag {
+  color: white;
+  text-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  border-radius: 5px;
+  text-transform: uppercase;
+  float: left;
+  padding: 0 15px 0 15px;
+  background: orange;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+}
+
+.far {
+  padding-right: 5px;
+}
+
+.rHover:hover {
+  background-color: white;
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  transform: scale(1.02);
+  transition: 0.25s;
+}

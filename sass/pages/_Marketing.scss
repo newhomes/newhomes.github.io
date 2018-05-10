@@ -1,0 +1,25 @@
+.storyRow {
+  max-width: $grid-width;
+  margin: 0 auto;
+  padding-top: 120px;
+
+}
+
+.section-testimonial {
+  margin-top: -120px;
+  position: relative;
+  height: 1200px;
+  margin-bottom: -50px;
+
+  &_secondHeader {
+    color: #212529;
+    padding-top: 200px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+
+.thirdHeader {
+  margin-bottom: 15px;
+}
