@@ -598,12 +598,24 @@ body {
   background-image: linear-gradient(to bottom, #e8e8e8, transparent);
   height: 1500px; }
 
+.headingContainer {
+  background-color: #e8e8e8;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+
 .rHeading {
-  padding-top: 50px;
+  margin: 0;
+  padding-top: 25px;
   font-size: 35px;
   color: #212529;
   text-align: center;
   text-transform: uppercase; }
+
+.mode {
+  display: inline-block;
+  position: absolute;
+  justify-content: flex-end; }
 
 .statusTag {
   color: white;
