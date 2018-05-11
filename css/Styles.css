@@ -352,10 +352,12 @@ breakpoint arguments:
     .rCard_image_9 {
       background-image: url(../img/901602Citadel.JPG); }
   .rCard_heading {
+    font-size: 1.5rem;
     background-color: black;
     color: white;
     text-transform: uppercase; }
   .rCard_details {
+    font-size: 1.5rem;
     height: 100px;
     display: inline-block;
     padding: 10px 0;
