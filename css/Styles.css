@@ -681,7 +681,7 @@ html {
 
 .mode {
   float: right;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   padding: 5px 15px;
   display: inline-block;
   border: none;
@@ -696,7 +696,7 @@ html {
 
 .statusTag {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   text-transform: uppercase;
