@@ -350,7 +350,7 @@ breakpoint arguments:
     .rCard_image_8 {
       background-image: url(../img/6729WILTSHIRE.JPG); }
     .rCard_image_9 {
-      background-image: url(../img/901602Citadel.JPG); }
+      background-image: url(../img/901602spectrum.JPG); }
   .rCard_heading {
     font-size: 1.5rem;
     background-color: black;
@@ -681,6 +681,7 @@ html {
 
 .mode {
   float: right;
+  font-size: 1.5rem;
   padding: 5px 15px;
   display: inline-block;
   border: none;
@@ -695,6 +696,7 @@ html {
 
 .statusTag {
   color: white;
+  font-size: 1.5rem;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   text-transform: uppercase;
