@@ -3,16 +3,17 @@
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 5px 25px;
-  border-radius: 10px;
+  padding: 5px 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
   transition: all, .2s;
   box-shadow: 0 3px 5px rgba(0,0,0,.2);
 }
 
 .mBtn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-3px);
   box-shadow: 0 5px 5px rgba(0,0,0,.2);
-  color:black;
+  color:$color-grey-dark;
 }
 
 .mBtn:active
@@ -30,8 +31,9 @@
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px 25px;
-  border-radius: 10px;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
   transition: all, .2s;
   box-shadow: 0 3px 5px rgba(0,0,0,.2);
   background-color: #212529;

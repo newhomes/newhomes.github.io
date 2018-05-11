@@ -2,8 +2,8 @@
   &_input {
 
     &_field {
-      font-size: 15px;
-      padding: 10px 20px;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
       border-radius: 2px;
       background-color: rgba(white,.85);
       border: none;
@@ -15,7 +15,7 @@
 
       &:focus {
         outline: none;
-        box-shadow: 0 10px 20px rgba(0,0,0,.1);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
         border-bottom: 3px solid $color-primary-light;
       }
 
@@ -25,10 +25,10 @@
     }
 
     &_label {
-      font-size: 13px;
+      font-size: 1.5rem;
       font-weight: 700;
-      margin-left: 18px;
-      margin-top: 7px;
+      margin-left: 1.8rem;
+      margin-top: .7rem;
       display: block;
       color: grey;
       transition: all .3s;
@@ -37,7 +37,24 @@
     &_field:placeholder-shown + &_label {
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-40px);
+      transform: translateY(-4rem);
     }
+  }
+}
+
+
+.form_input_checkbox {
+  padding-top: 45px;
+  width: 27%;
+  display: inline-block;
+  text-transform: uppercase;
+
+  &_label {
+  cursor: pointer;
+  font-size: 1.5rem;
+  }
+
+  &_button:focus {
+    color: black;
   }
 }

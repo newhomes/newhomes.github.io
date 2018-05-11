@@ -1,11 +1,11 @@
 .mCard {
-  perspective: 1500px;
-  -moz-perspective: 1500px;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
   position: relative;
-  height: 500px;
+  height: 50rem;
 
   &_side {
-    height: 500px;
+    height: 50rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -13,7 +13,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 6px;
-    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.5);
 
     &_front {
       background-color: white;
@@ -35,7 +35,7 @@
   // front side styling
   &_image {
     background-size: cover;
-    height: 230px;
+    height: 23rem;
     border-top-left-radius:6px;
     border-top-right-radius:6px;
 
@@ -53,18 +53,18 @@
   }
 
   &_heading {
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 400;
     text-transform: uppercase;
     color: white;
     text-align: right;
     position: absolute;
-    top: 210px;
-    right: 8px;
+    top: 21rem;
+    right: .8rem;
   }
 
   &_headingwrapper {
-    padding: 3px 16px;
+    padding: 3px 1.6rem;
     background-image: linear-gradient(
         to left top,
         rgba(0,0,0, 0.85),
@@ -75,8 +75,8 @@
   }
 
   &_details {
-    padding: 60px 50px;
-    line-height: 30px;
+    padding: 6rem 5rem;
+    line-height: 3rem;
     ul {
       list-style: none;
       width: 80%;
@@ -84,8 +84,8 @@
       li {
         text-align: center;
         color: grey;
-        font-size: 15px;
-        padding: 10px;
+        font-size: 1.5rem;
+        padding: 1rem;
           &:not(:last-child) {
             border-bottom: 1px solid lightgrey;
           }
@@ -103,15 +103,15 @@
   }
 
   .mCard_Back_Line1 {
-    font-size: 15px;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
   }
 
   .mCard_Back_Price {
-    font-size: 220%;
+    font-size: 3.5rem;
     font-weight: 100;
-    padding-bottom: 80px;
+    padding-bottom: 8rem;
     display: inline-block;
   }
 }
@@ -135,6 +135,24 @@
     }
     &_3{
       background-image: url(../img/9065510.JPG);
+    }
+    &_4{
+      background-image: url(../img/803Granville.JPG);
+    }
+    &_5{
+      background-image: url(../img/405Macpherson.JPG);
+    }
+    &_6{
+      background-image: url(../img/5711Marguerite.JPG);
+    }
+    &_7{
+      background-image: url(../img/50166Cordova.JPG);
+    }
+    &_8{
+      background-image: url(../img/6729WILTSHIRE.JPG);
+    }
+    &_9{
+      background-image: url(../img/901602Citadel.JPG);
     }
   }
   &_heading {

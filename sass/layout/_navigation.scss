@@ -2,18 +2,18 @@
 .headWrapper {
   background-color: #232323;
   text-align: center;
-  padding: 15px;
+  padding: 1.5rem;
 }
 
 .headWrapper img {
-    height: 150px;
+    height: 15rem;
 }
 
 .navigationWrapper {
   margin: 0 auto;
   background-color: black;
   font-weight: bold;
-  height: 25px;
+  height: 2.5rem;
   width: 100%;
 }
 
@@ -56,13 +56,14 @@
 }
 
 .mainMenu > ul > li {
-  min-width: 200px;
+  min-width: 20rem;
   display: inline-block;
 }
 
 .link {
-  line-height: 1.5rem;
-  height: 25px;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
   display: block;
   text-decoration: none;
   color: black;

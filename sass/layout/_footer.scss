@@ -6,17 +6,18 @@
   padding-bottom: 2.5%;
   float: left;
   text-align: center;
+  font-size: 1.5rem;
   width: 100%;
   color: white;
 
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal})/2);
     float: left;
-    padding-bottom: 25px;
+    padding-bottom: 2.5rem;
   }
 
   .col-1-of-2A {
-    padding-top: 10px;
+    padding-top: 1rem;
 
     & a {
       padding: 5px 5px;
