@@ -160,6 +160,12 @@
     background-color: black;
     color: white;
     text-transform: uppercase;
+    @include respond(tab-port) {
+      color: red;
+    }
+    @include respond(phone) {
+      font-size: .5rem;
+    }
   }
   &_details {
     font-size: 1.5rem;
@@ -167,5 +173,6 @@
     display: inline-block;
     padding: 10px 0;
     line-height: 15px;
+
   }
 }
