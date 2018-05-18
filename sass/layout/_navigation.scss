@@ -56,8 +56,11 @@
 }
 
 .mainMenu > ul > li {
-  min-width: 20rem;
+  min-width: 25rem;
   display: inline-block;
+  @include respond(phone) {
+    min-width: 10rem;
+  }
 }
 
 .link {
@@ -88,6 +91,10 @@
   background-color: white;
   z-index: 1;
   list-style: none;
+  @include respond(phone) {
+    left: -25%;
+    min-width: 15rem;
+  }
 }
 
 .drop:hover .subMenu {

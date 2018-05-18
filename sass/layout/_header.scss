@@ -10,6 +10,11 @@
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond (phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
+    transition: 1s;
+  }
 }
 
 .mLogoBox {

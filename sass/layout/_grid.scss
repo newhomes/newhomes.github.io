@@ -9,6 +9,9 @@
       margin-bottom: $gutter-vertical-small;
     }
   }
+  @include respond (phone) {
+    max-width: 55rem;
+  }
 
   @include clearfix;
 
@@ -20,12 +23,13 @@
 
       @include respond (phone) {
         margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
       }
     }
 
     @include respond (phone) {
       width: 100% !important;
-      padding: 15%;
+      padding: 5% 15%;
     }
   }
 

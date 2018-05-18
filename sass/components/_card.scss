@@ -123,8 +123,12 @@
 //***********REAL ESTATE PAGE***********//
 .rCard {
   padding: 1% 3.5%;
+
   &_image {
     height: 250px;
+    @include respond(phone) {
+    height: 350px;
+    }
     background-size: cover;
     position: relative;
     &_1{
@@ -161,10 +165,10 @@
     color: white;
     text-transform: uppercase;
     @include respond(tab-port) {
-      color: red;
+      font-size: 1rem;
     }
     @include respond(phone) {
-      font-size: .5rem;
+      font-size: 2rem;
     }
   }
   &_details {
@@ -174,5 +178,8 @@
     padding: 10px 0;
     line-height: 15px;
 
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 }

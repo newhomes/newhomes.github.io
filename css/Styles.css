@@ -79,7 +79,10 @@ breakpoint arguments:
     margin-bottom: 8rem; }
     @media only screen and (max-width: 885px) {
       .Row:not(:last-child) {
-        margin-bottom: 6rem; } }
+        margin-bottom: 3rem; } }
+  @media only screen and (max-width: 885px) {
+    .Row {
+      max-width: 55rem; } }
   .Row::after {
     content: "";
     display: table;
@@ -91,11 +94,12 @@ breakpoint arguments:
       margin-right: 7rem; }
       @media only screen and (max-width: 885px) {
         .Row [class^="col-"]:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 0;
+          margin-bottom: 3rem; } }
     @media only screen and (max-width: 885px) {
       .Row [class^="col-"] {
         width: 100% !important;
-        padding: 15%; } }
+        padding: 5% 15%; } }
   .Row .col-1-of-2 {
     text-align: center;
     width: calc((100% - 7rem)/2);
@@ -121,6 +125,10 @@ breakpoint arguments:
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media only screen and (max-width: 885px) {
+    .mHeader {
+      clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
+      transition: 1s; } }
 
 .mLogoBox {
   position: absolute;
@@ -141,13 +149,16 @@ breakpoint arguments:
 .footer {
   background-color: #232323;
   clip-path: polygon(0 40px, 100% 0%, 100% 100%, 0 100%);
-  padding-top: 4.5%;
+  padding-top: 6%;
   padding-bottom: 2.5%;
   float: left;
   text-align: center;
   font-size: 1.5rem;
   width: 100%;
   color: white; }
+  @media only screen and (max-width: 885px) {
+    .footer {
+      padding-top: 10%; } }
   .footer .col-1-of-2 {
     width: calc((100% - 7rem)/2);
     float: left;
@@ -217,8 +228,11 @@ breakpoint arguments:
   list-style: none; }
 
 .mainMenu > ul > li {
-  min-width: 20rem;
+  min-width: 25rem;
   display: inline-block; }
+  @media only screen and (max-width: 885px) {
+    .mainMenu > ul > li {
+      min-width: 10rem; } }
 
 .link {
   line-height: 2.5rem;
@@ -245,6 +259,10 @@ breakpoint arguments:
   background-color: white;
   z-index: 1;
   list-style: none; }
+  @media only screen and (max-width: 885px) {
+    .subMenu {
+      left: -25%;
+      min-width: 15rem; } }
 
 .drop:hover .subMenu {
   display: block; }
@@ -338,6 +356,9 @@ breakpoint arguments:
     height: 250px;
     background-size: cover;
     position: relative; }
+    @media only screen and (max-width: 885px) {
+      .rCard_image {
+        height: 350px; } }
     .rCard_image_1 {
       background-image: url(../img/1653onepacific1.jpg); }
     .rCard_image_2 {
@@ -363,16 +384,19 @@ breakpoint arguments:
     text-transform: uppercase; }
     @media only screen and (max-width: 940px) {
       .rCard_heading {
-        color: red; } }
+        font-size: 1rem; } }
     @media only screen and (max-width: 885px) {
       .rCard_heading {
-        font-size: .5rem; } }
+        font-size: 2rem; } }
   .rCard_details {
     font-size: 1.5rem;
     height: 100px;
     display: inline-block;
     padding: 10px 0;
     line-height: 15px; }
+    @media only screen and (max-width: 885px) {
+      .rCard_details {
+        font-size: 2rem; } }
 
 .mBtn:link,
 .mBtn:visited {
@@ -659,10 +683,8 @@ html {
   margin-bottom: 15px; }
 
 .listingContent {
-  background-image: linear-gradient(to bottom, #e8e8e8, transparent); }
-
-.listingContainer {
-  padding-bottom: 30px; }
+  background-image: linear-gradient(to bottom, #e8e8e8, transparent);
+  padding: 5rem 0; }
 
 .headingContainer {
   background-color: #e8e8e8;
@@ -703,7 +725,7 @@ html {
 
 .statusTag {
   color: white;
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   text-transform: uppercase;
@@ -714,6 +736,9 @@ html {
   top: 10px;
   left: 10px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 885px) {
+    .statusTag {
+      font-size: 2.5rem; } }
 
 .far {
   padding-right: 5px; }
