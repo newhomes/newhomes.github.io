@@ -343,7 +343,7 @@ breakpoint arguments:
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px; }
   .mCard_details {
-    padding: 6rem 5rem;
+    padding-bottom: 5rem;
     line-height: 3rem; }
     .mCard_details ul {
       list-style: none;
@@ -391,13 +391,13 @@ breakpoint arguments:
       .mCard_details {
         padding-top: 4rem; }
         .mCard_details ul li {
-          font-size: 1.7rem; }
+          font-size: 2rem; }
       .mCard:hover .mCard_side_front {
         transform: rotateY(0); }
       .mCard_Back_priceContanier {
         padding-top: 1rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
         padding-bottom: 4rem;
         width: 100%;
         position: relative;
@@ -405,7 +405,7 @@ breakpoint arguments:
         left: 0;
         transform: translate(0, 0); }
       .mCard_Back_Line1 {
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-weight: 700;
         text-transform: uppercase; }
       .mCard_Back_Price {
@@ -479,6 +479,10 @@ breakpoint arguments:
   border-radius: 1rem;
   transition: all, .2s;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 882px) {
+    .mBtn:link,
+    .mBtn:visited {
+      font-size: 2rem; } }
 
 .mBtn:hover {
   transform: translateY(-3px);
