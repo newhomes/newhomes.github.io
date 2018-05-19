@@ -77,10 +77,10 @@ breakpoint arguments:
   margin: 0 auto; }
   .Row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 885px) {
+    @media only screen and (max-width: 882px) {
       .Row:not(:last-child) {
         margin-bottom: 3rem; } }
-  @media only screen and (max-width: 885px) {
+  @media only screen and (max-width: 882px) {
     .Row {
       max-width: 55rem; } }
   .Row::after {
@@ -92,14 +92,14 @@ breakpoint arguments:
     float: left; }
     .Row [class^="col-"]:not(:last-child) {
       margin-right: 7rem; }
-      @media only screen and (max-width: 885px) {
+      @media only screen and (max-width: 882px) {
         .Row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 3rem; } }
-    @media only screen and (max-width: 885px) {
+    @media only screen and (max-width: 882px) {
       .Row [class^="col-"] {
         width: 100% !important;
-        padding: 5% 15%; } }
+        padding: 5% 10%; } }
   .Row .col-1-of-2 {
     text-align: center;
     width: calc((100% - 7rem)/2);
@@ -117,6 +117,23 @@ breakpoint arguments:
     .Row .col-1-of-4:not(:last-child) {
       margin-right: 7rem; }
 
+.soldRow {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .soldRow [class^="col-"] {
+    width: calc((100% - (7rem)*2)/3);
+    float: left; }
+    .soldRow [class^="col-"]:not(:last-child) {
+      margin-right: 7rem; }
+      @media only screen and (max-width: 882px) {
+        .soldRow [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 3rem; } }
+    @media only screen and (max-width: 882px) {
+      .soldRow [class^="col-"] {
+        width: 100% !important;
+        padding: 5% 10%; } }
+
 .mHeader {
   height: 90vh;
   /*90% of viewport height*/
@@ -125,7 +142,7 @@ breakpoint arguments:
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  @media only screen and (max-width: 885px) {
+  @media only screen and (max-width: 882px) {
     .mHeader {
       clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
       transition: 1s; } }
@@ -156,13 +173,17 @@ breakpoint arguments:
   font-size: 1.5rem;
   width: 100%;
   color: white; }
-  @media only screen and (max-width: 885px) {
+  @media only screen and (max-width: 882px) {
     .footer {
-      padding-top: 10%; } }
+      padding-top: 15%; } }
   .footer .col-1-of-2 {
     width: calc((100% - 7rem)/2);
     float: left;
     padding-bottom: 2.5rem; }
+    @media only screen and (max-width: 882px) {
+      .footer .col-1-of-2 {
+        width: 100% !important;
+        font-size: 2rem; } }
   .footer .col-1-of-2A {
     padding-top: 1rem; }
     .footer .col-1-of-2A a {
@@ -178,8 +199,11 @@ breakpoint arguments:
     float: left; }
 
 .footerLogo {
-  padding: 0 10px;
-  height: 50px; }
+  padding: 0 1rem;
+  height: 5rem; }
+  @media only screen and (max-width: 882px) {
+    .footerLogo {
+      height: 3rem; } }
 
 /*---Navigation Section---*/
 .headWrapper {
@@ -230,7 +254,7 @@ breakpoint arguments:
 .mainMenu > ul > li {
   min-width: 25rem;
   display: inline-block; }
-  @media only screen and (max-width: 885px) {
+  @media only screen and (max-width: 882px) {
     .mainMenu > ul > li {
       min-width: 10rem; } }
 
@@ -259,9 +283,10 @@ breakpoint arguments:
   background-color: white;
   z-index: 1;
   list-style: none; }
-  @media only screen and (max-width: 885px) {
+  @media only screen and (max-width: 882px) {
     .subMenu {
       left: -25%;
+      white-space: nowrap;
       min-width: 15rem; } }
 
 .drop:hover .subMenu {
@@ -331,34 +356,78 @@ breakpoint arguments:
         padding: 1rem; }
         .mCard_details ul li:not(:last-child) {
           border-bottom: 1px solid lightgrey; }
-  .mCard .mCard_Back_priceContanier {
+  .mCard_Back_priceContanier {
     width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .mCard .mCard_Back_Line1 {
-    font-size: 1.7rem;
+  .mCard_Back_Line1 {
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase; }
-  .mCard .mCard_Back_Price {
+  .mCard_Back_Price {
     font-size: 3.5rem;
     font-weight: 100;
     padding-bottom: 8rem;
     display: inline-block; }
-
-.mCard_Content {
-  padding: 5px; }
+  .mCard_Content {
+    padding: 5px; }
+  @media only screen and (max-width: 882px) {
+    .mCard {
+      height: auto;
+      box-shadow: 1rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      background-image: url(../img/whitewood.png); }
+      .mCard_side {
+        height: auto;
+        position: relative;
+        border-radius: 0;
+        box-shadow: none;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 92%, 0 100%); }
+        .mCard_side_back {
+          background-image: none;
+          transform: rotateY(0); }
+      .mCard_details {
+        padding-top: 4rem; }
+        .mCard_details ul li {
+          font-size: 1.7rem; }
+      .mCard:hover .mCard_side_front {
+        transform: rotateY(0); }
+      .mCard_Back_priceContanier {
+        padding-top: 1rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 4rem;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0); }
+      .mCard_Back_Line1 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-transform: uppercase; }
+      .mCard_Back_Price {
+        font-size: 3.5rem;
+        font-weight: 100;
+        padding-bottom: 2rem;
+        display: inline-block; }
+      .mCard_Content {
+        padding: 5px; } }
 
 .rCard {
   padding: 1% 3.5%; }
+  @media only screen and (max-width: 882px) {
+    .rCard {
+      padding: 1% 0; } }
   .rCard_image {
-    height: 250px;
+    height: 25rem;
     background-size: cover;
     position: relative; }
-    @media only screen and (max-width: 885px) {
+    @media only screen and (max-width: 882px) {
       .rCard_image {
-        height: 350px; } }
+        height: 28rem; } }
     .rCard_image_1 {
       background-image: url(../img/1653onepacific1.jpg); }
     .rCard_image_2 {
@@ -377,15 +446,17 @@ breakpoint arguments:
       background-image: url(../img/6729WILTSHIRE.JPG); }
     .rCard_image_9 {
       background-image: url(../img/901602spectrum.JPG); }
+    .rCard_image_10 {
+      background-image: url(../img/4196staulo.JPG); }
   .rCard_heading {
     font-size: 1.5rem;
     background-color: black;
     color: white;
     text-transform: uppercase; }
-    @media only screen and (max-width: 940px) {
+    @media only screen and (max-width: 900px) {
       .rCard_heading {
         font-size: 1rem; } }
-    @media only screen and (max-width: 885px) {
+    @media only screen and (max-width: 882px) {
       .rCard_heading {
         font-size: 2rem; } }
   .rCard_details {
@@ -394,7 +465,7 @@ breakpoint arguments:
     display: inline-block;
     padding: 10px 0;
     line-height: 15px; }
-    @media only screen and (max-width: 885px) {
+    @media only screen and (max-width: 882px) {
       .rCard_details {
         font-size: 2rem; } }
 
@@ -648,9 +719,18 @@ html {
   @media only screen and (max-width: 1070px) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 940px) {
+  @media only screen and (max-width: 900px) {
     html {
       font-size: 45%; } }
+
+/*---Carousel Section---*/
+@media only screen and (max-width: 882px) {
+  .carousel-caption {
+    display: none; } }
+
+.btn {
+  background-color: #ff7730 !important;
+  border: none !important; }
 
 /*---Services Section---*/
 .section-services {
@@ -723,7 +803,7 @@ html {
   color: white;
   background-color: orange; }
 
-.statusTag {
+.soldStatusTag {
   color: white;
   font-size: 1.5rem;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
@@ -736,8 +816,25 @@ html {
   top: 10px;
   left: 10px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 885px) {
-    .statusTag {
+  @media only screen and (max-width: 882px) {
+    .soldStatusTag {
+      font-size: 2.5rem; } }
+
+.activeStatusTag {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-transform: uppercase;
+  float: left;
+  padding: 0 15px 0 15px;
+  background-color: green;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 882px) {
+    .activeStatusTag {
       font-size: 2.5rem; } }
 
 .far {
@@ -748,3 +845,6 @@ html {
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
   transition: 0.25s; }
+
+.hide {
+  display: none !important; }

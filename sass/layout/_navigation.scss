@@ -93,6 +93,7 @@
   list-style: none;
   @include respond(phone) {
     left: -25%;
+    white-space: nowrap;
     min-width: 15rem;
   }
 }

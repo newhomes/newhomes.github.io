@@ -94,7 +94,7 @@
   }
 
   //BACK SIDE STYLING
-  .mCard_Back_priceContanier {
+  &_Back_priceContanier {
     width: 90%;
     position: absolute;
     top: 50%;
@@ -102,32 +102,99 @@
     transform: translate(-50%, -50%);
   }
 
-  .mCard_Back_Line1 {
-    font-size: 1.7rem;
+  &_Back_Line1 {
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
   }
 
-  .mCard_Back_Price {
+  &_Back_Price {
     font-size: 3.5rem;
     font-weight: 100;
     padding-bottom: 8rem;
     display: inline-block;
   }
-}
 
-.mCard_Content {
-  padding: 5px;
+  &_Content {
+    padding: 5px;
+  }
+
+//***********MEDIA QUERY PAGE LAYOUT CHANGE***********//
+  @include respond(phone) {
+    height: auto;
+    box-shadow: 1rem .5rem 2rem rgba(0,0,0,.2);
+    border-radius: 6px;
+    background-image: url(../img/whitewood.png);
+
+    &_side {
+      height: auto;
+      position: relative;
+      border-radius: 0;
+      box-shadow: none;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 92%, 0 100%);
+
+      &_back {
+        background-image: none;
+        transform: rotateY(0);
+      }
+    }
+
+    &_details {
+      padding-top: 4rem;
+      ul {
+        li {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    &:hover &_side_front {
+        transform: rotateY(0);
+    }
+
+    //BACK SIDE STYLING
+    &_Back_priceContanier {
+      padding-top: 1rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-bottom: 4rem;
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+    }
+
+    &_Back_Line1 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &_Back_Price {
+      font-size: 3.5rem;
+      font-weight: 100;
+      padding-bottom: 2rem;
+      display: inline-block;
+    }
+
+    &_Content {
+      padding: 5px;
+    }
+  }
 }
 
 //***********REAL ESTATE PAGE***********//
 .rCard {
   padding: 1% 3.5%;
+  @include respond(phone) {
+    padding: 1% 0;
+  }
 
   &_image {
-    height: 250px;
+    height: 25rem;
     @include respond(phone) {
-    height: 350px;
+    height: 28rem;
     }
     background-size: cover;
     position: relative;
@@ -157,6 +224,9 @@
     }
     &_9{
       background-image: url(../img/901602spectrum.JPG);
+    }
+    &_10{
+      background-image: url(../img/4196staulo.JPG);
     }
   }
   &_heading {

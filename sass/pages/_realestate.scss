@@ -49,7 +49,7 @@
   background-color: orange;
 }
 
-.statusTag {
+.soldStatusTag {
   color: white;
   font-size: 1.5rem;
   text-shadow: 2px 3px 5px rgba(0,0,0,.2);
@@ -58,6 +58,25 @@
   float: left;
   padding: 0 15px 0 15px;
   background-color: orange;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+.activeStatusTag {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  border-radius: 5px;
+  text-transform: uppercase;
+  float: left;
+  padding: 0 15px 0 15px;
+  background-color: green;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -77,4 +96,8 @@
   box-shadow: 2px 3px 5px rgba(0,0,0,.2);
   transform: scale(1.02);
   transition: 0.25s;
+}
+
+.hide {
+  display: none !important;
 }

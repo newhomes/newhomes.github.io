@@ -9,6 +9,19 @@ html {
   }
 }
 
+
+/*---Carousel Section---*/
+.carousel-caption {
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.btn {
+  background-color: $color-secondary-dark !important;
+  border: none !important;
+}
+
 /*---Services Section---*/
 
 .section-services {
