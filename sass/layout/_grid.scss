@@ -63,7 +63,7 @@
 .soldRow {
   max-width: $grid-width;
   margin: 0 auto;
-  
+
   [class^="col-"] {
     width: calc((100% - (#{$gutter-horizontal})*2)/3);
     float: left;

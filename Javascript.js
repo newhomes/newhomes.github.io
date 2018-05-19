@@ -27,8 +27,12 @@ function init(){
         } else {
           sold[a].classList.add("hide");
         }
-        for(var b=0; b<active.length; b++){
-          active[b].classList.toggle("hide");
+      for(var b=0; b<active.length; b++){
+        if(this.textContent === "Active") {
+          active[b].classList.remove("hide");
+        } else {
+          active[b].classList.add("hide");
+          }
         }
       }
     });
