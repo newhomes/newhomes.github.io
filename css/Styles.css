@@ -343,7 +343,7 @@ breakpoint arguments:
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px; }
   .mCard_details {
-    padding-bottom: 5rem;
+    padding: 5rem 3rem;
     line-height: 3rem; }
     .mCard_details ul {
       list-style: none;
