@@ -29,6 +29,20 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
 .mPrimaryHeading {
   color: white;
   text-transform: uppercase;
@@ -378,7 +392,9 @@ breakpoint arguments:
       height: auto;
       box-shadow: 1rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
       border-radius: 6px;
-      background-image: url(../img/whitewood.png); }
+      background-image: url(../img/brownwood.jpg);
+      background-position: center;
+      color: white; }
       .mCard_side {
         height: auto;
         position: relative;
@@ -391,7 +407,7 @@ breakpoint arguments:
       .mCard_details {
         padding-top: 4rem; }
         .mCard_details ul li {
-          font-size: 2rem; }
+          font-size: 1.6rem; }
       .mCard:hover .mCard_side_front {
         transform: rotateY(0); }
       .mCard_Back_priceContanier {
@@ -405,11 +421,11 @@ breakpoint arguments:
         left: 0;
         transform: translate(0, 0); }
       .mCard_Back_Line1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 700;
         text-transform: uppercase; }
       .mCard_Back_Price {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
         font-weight: 100;
         padding-bottom: 2rem;
         display: inline-block; }
@@ -419,16 +435,10 @@ breakpoint arguments:
 .rCard {
   padding: 1% 3.5%;
   text-align: center; }
-  @media only screen and (max-width: 882px) {
-    .rCard {
-      padding: 1% 0; } }
   .rCard_image {
-    height: 25rem;
+    height: 30rem;
     background-size: cover;
     position: relative; }
-    @media only screen and (max-width: 882px) {
-      .rCard_image {
-        height: 28rem; } }
     .rCard_image_1 {
       background-image: url(../img/1653onepacific1.jpg); }
     .rCard_image_2 {
@@ -449,26 +459,59 @@ breakpoint arguments:
       background-image: url(../img/901602spectrum.JPG); }
     .rCard_image_10 {
       background-image: url(../img/4196staulocres.jpg); }
+    .rCard_image_11 {
+      background-image: url(../img/10691no1.jpg); }
+    .rCard_image_12 {
+      background-image: url(../img/3465seaforth.jpg); }
+    .rCard_image_13 {
+      background-image: url(../img/2795redfern.jpg); }
+    .rCard_image_14 {
+      background-image: url(../img/26021367alberni.jpg); }
+    .rCard_image_15 {
+      background-image: url(../img/906980cooperage.jpg); }
+    .rCard_image_16 {
+      background-image: url(../img/8031616bayshore.jpg); }
+    .rCard_image_17 {
+      background-image: url(../img/2102620cardero.jpg); }
   .rCard_heading {
     font-size: 1.5rem;
     background-color: black;
     color: white;
     text-transform: uppercase; }
-    @media only screen and (max-width: 900px) {
-      .rCard_heading {
-        font-size: 1rem; } }
-    @media only screen and (max-width: 882px) {
-      .rCard_heading {
-        font-size: 2rem; } }
   .rCard_details {
     font-size: 1.5rem;
     height: 100px;
     display: inline-block;
     padding: 10px 0;
     line-height: 15px; }
-    @media only screen and (max-width: 882px) {
-      .rCard_details {
-        font-size: 2rem; } }
+
+.cCard {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem; }
+  @media only screen and (max-width: 1070px) {
+    .cCard {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 727px) {
+    .cCard {
+      grid-template-columns: repeat(1, 1fr); } }
+  .cCard_image {
+    height: 35rem;
+    background-size: cover;
+    background-position: center;
+    position: relative; }
+    @media only screen and (max-width: 727px) {
+      .cCard_image {
+        height: 45rem; } }
+    .cCard_image_1 {
+      background-image: url(../img/6976-WILTSHIRE.jpg); }
+    .cCard_image_2 {
+      background-image: url(../img/6112churchill.jpg); }
+    .cCard_image_3 {
+      background-image: url(../img/5718adera.jpg); }
+    .cCard_image_4 {
+      background-image: url(../img/5758adera.jpg); }
 
 .mBtn:link,
 .mBtn:visited {
@@ -588,6 +631,9 @@ breakpoint arguments:
   border-bottom: 3px solid transparent;
   width: 80%;
   display: block; }
+  @media only screen and (max-width: 900px) {
+    .form_input_field {
+      width: 100%; } }
   .form_input_field:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -614,6 +660,10 @@ breakpoint arguments:
   width: 27%;
   display: inline-block;
   text-transform: uppercase; }
+  @media only screen and (max-width: 900px) {
+    .form_input_checkbox {
+      width: 100%;
+      margin-bottom: 2rem; } }
   .form_input_checkbox_label {
     cursor: pointer;
     font-size: 1.5rem; }
@@ -702,13 +752,26 @@ breakpoint arguments:
   background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 55%, transparent 50%), url(../img/vancouver.jpeg);
   background-size: 100%;
   background-position: center;
-  height: 600px;
   border-radius: 5px;
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
   margin-bottom: -50px; }
+  @media only screen and (max-width: 1070px) {
+    .estimation {
+      background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 65%, transparent 65), url(../img/vancouver.jpeg);
+      background-size: cover; } }
+  @media only screen and (max-width: 900px) {
+    .estimation {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url(../img/vancouver.jpeg);
+      background-size: cover; } }
   .estimation_content_container {
     width: 60%;
     padding: 50px; }
+    @media only screen and (max-width: 1070px) {
+      .estimation_content_container {
+        width: 65%; } }
+    @media only screen and (max-width: 900px) {
+      .estimation_content_container {
+        width: 100%; } }
   .estimation_secondHeader {
     text-transform: uppercase;
     padding-bottom: 25px; }
@@ -720,13 +783,10 @@ breakpoint arguments:
     padding-top: 35px; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 60%; }
   @media only screen and (max-width: 1070px) {
     html {
-      font-size: 50%; } }
-  @media only screen and (max-width: 900px) {
-    html {
-      font-size: 45%; } }
+      font-size: 55%; } }
 
 /*---Carousel Section---*/
 @media only screen and (max-width: 882px) {
@@ -769,7 +829,21 @@ html {
 
 .listingContent {
   background-image: linear-gradient(to bottom, #e8e8e8, transparent);
-  padding: 5rem 0; }
+  padding: 5rem 3%; }
+  @media only screen and (max-width: 727px) {
+    .listingContent {
+      padding: 5rem 10%; } }
+
+.rCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%; }
+  @media only screen and (max-width: 1070px) {
+    .rCard {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 727px) {
+    .rCard {
+      grid-template-columns: repeat(1, 1fr); } }
 
 .soldListingContainer {
   padding-bottom: 4rem; }
@@ -824,9 +898,6 @@ html {
   top: 10px;
   left: 10px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 882px) {
-    .soldStatusTag {
-      font-size: 2.5rem; } }
 
 .activeStatusTag {
   color: white;
@@ -841,9 +912,6 @@ html {
   top: 10px;
   left: 10px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 882px) {
-    .activeStatusTag {
-      font-size: 2.5rem; } }
 
 .far {
   padding-right: 5px; }
@@ -852,10 +920,29 @@ html {
   background-color: white;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
-  transition: 0.25s; }
+  transition: 0.4s; }
 
 .hide {
   display: none !important; }
 
 .Porfolio {
   height: 100vh; }
+
+.constructionListingsContainer {
+  background-image: linear-gradient(to bottom, #e8e8e8, transparent);
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.cHover:hover {
+  transform: scale(1.02);
+  transition: 0.4s; }
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both; }

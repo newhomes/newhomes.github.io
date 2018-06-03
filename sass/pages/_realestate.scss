@@ -3,7 +3,22 @@
   to bottom,
   rgba($color-grey-light,1),
   transparent);
-  padding: 5rem 0;
+  padding: 5rem 3%;
+  @include respond(small) {
+    padding: 5rem 10%;
+  }
+}
+
+.rCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%;
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(small) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .soldListingContainer {
@@ -66,10 +81,6 @@
   top: 10px;
   left: 10px;
   box-shadow: 2px 3px 5px rgba(0,0,0,.2);
-
-  @include respond(phone) {
-    font-size: 2.5rem;
-  }
 }
 
 .activeStatusTag {
@@ -85,10 +96,6 @@
   top: 10px;
   left: 10px;
   box-shadow: 2px 3px 5px rgba(0,0,0,.2);
-
-  @include respond(phone) {
-    font-size: 2.5rem;
-  }
 }
 
 .far {
@@ -99,7 +106,7 @@
   background-color: white;
   box-shadow: 2px 3px 5px rgba(0,0,0,.2);
   transform: scale(1.02);
-  transition: 0.25s;
+  transition: 0.4s;
 }
 
 .hide {

@@ -13,6 +13,10 @@
       width: 80%;
       display: block;
 
+      @include respond (tab-port) {
+        width: 100%;
+      }
+
       &:focus {
         outline: none;
         box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
@@ -48,6 +52,11 @@
   width: 27%;
   display: inline-block;
   text-transform: uppercase;
+
+  @include respond (tab-port) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
   &_label {
   cursor: pointer;

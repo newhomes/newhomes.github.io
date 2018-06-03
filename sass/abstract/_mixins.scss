@@ -29,6 +29,9 @@ breakpoint arguments:
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media only screen and (max-width: 727px) { @content };
+  }
   @if $breakpoint == phone {
     @media only screen and (max-width: 882px) { @content };
   }
