@@ -299,9 +299,9 @@ breakpoint arguments:
   list-style: none; }
   @media only screen and (max-width: 882px) {
     .subMenu {
-      left: -25%;
+      left: -45%;
       white-space: nowrap;
-      min-width: 15rem; } }
+      min-width: 20rem; } }
 
 .drop:hover .subMenu {
   display: block; }

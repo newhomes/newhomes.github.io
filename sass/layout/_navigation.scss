@@ -92,9 +92,9 @@
   z-index: 1;
   list-style: none;
   @include respond(phone) {
-    left: -25%;
+    left: -45%;
     white-space: nowrap;
-    min-width: 15rem;
+    min-width: 20rem;
   }
 }
 
