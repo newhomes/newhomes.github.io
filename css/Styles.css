@@ -460,7 +460,7 @@ breakpoint arguments:
     .rCard_image_10 {
       background-image: url(../img/4196staulocres.jpg); }
     .rCard_image_11 {
-      background-image: url(../img/10691no1rd.jpg); }
+      background-image: url(../img/10691no1.png); }
     .rCard_image_12 {
       background-image: url(../img/3465seaforth.jpg); }
     .rCard_image_13 {
@@ -468,11 +468,13 @@ breakpoint arguments:
     .rCard_image_14 {
       background-image: url(../img/26021367alberni.jpg); }
     .rCard_image_15 {
-      background-image: url(../img/906980cooperageway.jpg); }
+      background-image: url(../img/906980cooperageway.png); }
     .rCard_image_16 {
       background-image: url(../img/8031616bayshore.jpg); }
     .rCard_image_17 {
       background-image: url(../img/2102620cardero.jpg); }
+    .rCard_image_18 {
+      background-image: url(../img/cambiegardens.jpg); }
   .rCard_heading {
     font-size: 1.5rem;
     background-color: black;
@@ -924,9 +926,6 @@ html {
 
 .hide {
   display: none !important; }
-
-.Porfolio {
-  height: 100vh; }
 
 .constructionListingsContainer {
   background-image: linear-gradient(to bottom, #e8e8e8, transparent);
