@@ -927,6 +927,32 @@ html {
 .hide {
   display: none !important; }
 
+.pHeading {
+  width: 100%;
+  padding: 2% 3%; }
+
+.pCard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3%;
+  padding: 1% 3.5%;
+  justify-items: center; }
+  @media only screen and (max-width: 1070px) {
+    .pCard {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 727px) {
+    .pCard {
+      grid-template-columns: repeat(1, 1fr); } }
+  .pCard img {
+    display: none;
+    width: 15rem;
+    background-size: cover; }
+
+.pVideo {
+  padding-top: 3%;
+  height: auto;
+  max-width: 50%; }
+
 .constructionListingsContainer {
   background-image: linear-gradient(to bottom, #e8e8e8, transparent);
   padding-top: 2rem;
