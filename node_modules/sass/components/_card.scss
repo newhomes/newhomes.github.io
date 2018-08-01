@@ -1,0 +1,151 @@
+.mCard {
+  perspective: 1500px;
+  -moz-perspective: 1500px;
+  position: relative;
+  height: 500px;
+
+  &_side {
+    height: 500px;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+
+    &_front {
+      background-color: white;
+    }
+
+    &_back {
+      background-image: url(../img/whitewood.png);
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &_side_front {
+        transform: rotateY(-180deg);
+  }
+  &:hover &_side_back {
+        transform: rotateY(0);
+  }
+
+  // front side styling
+  &_image {
+    background-size: cover;
+    height: 230px;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+
+    &_1 {
+      background-image: url(../img/Marketing.jpg);
+    }
+    &_2 {
+      background-image: url(../img/Realestate.jpeg);
+    }
+    &_3 {
+      background-position: center;
+      background-image: url(../img/Construction.jpeg);
+    }
+
+  }
+
+  &_heading {
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 210px;
+    right: 8px;
+  }
+
+  &_headingwrapper {
+    padding: 3px 16px;
+    background-image: linear-gradient(
+        to left top,
+        rgba(0,0,0, 0.85),
+        rgba(0,0,0, 0)),
+        url(../img/leather.jpg);
+    box-shadow: 0 5px 4px rgba(0,0,0,.2);
+    border-radius: 4px;
+  }
+
+  &_details {
+    padding: 60px 50px;
+    line-height: 30px;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        color: grey;
+        font-size: 15px;
+        padding: 10px;
+          &:not(:last-child) {
+            border-bottom: 1px solid lightgrey;
+          }
+      }
+    }
+  }
+
+  //BACK SIDE STYLING
+  .mCard_Back_priceContanier {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mCard_Back_Line1 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .mCard_Back_Price {
+    font-size: 220%;
+    font-weight: 100;
+    padding-bottom: 80px;
+    display: inline-block;
+  }
+}
+
+.mCard_Content {
+  padding: 5px;
+}
+
+//***********REAL ESTATE PAGE***********//
+.rCard {
+  padding: 1% 3.5%;
+  &_image {
+    height: 250px;
+    background-size: cover;
+    position: relative;
+    &_1{
+      background-image: url(../img/1653onepacific1.jpg);
+    }
+    &_2{
+      background-image: url(../img/parkside.JPG);
+    }
+    &_3{
+      background-image: url(../img/9065510.JPG);
+    }
+  }
+  &_heading {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+  }
+  &_details {
+    height: 100px;
+    display: inline-block;
+    padding: 10px 0;
+    line-height: 15px;
+  }
+}
